@@ -58,3 +58,6 @@ main {
   font-weight: bold;
   margin-bottom: 15px;
 }
+#add_to_cart {
+  display: none;
+}
