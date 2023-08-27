@@ -90,7 +90,7 @@ def product_jacket():  # put application's code here
         "img": "/static/images/jacket.webp",
         "price": "10000",
         "count": "100",
-        "description": "<p>Куртка классная и прекрасная, покупай! Слякоть не почем, дождь остается в стороне!</p>",
+        "description": "<p>Куртка классная и прекрасная, покупай! Слякоть ни по чем, дождь остается в стороне!</p>",
     }
 
     return render_template("product.html", **context)
@@ -105,7 +105,7 @@ def product_sneakers():  # put application's code here
         "img": "/static/images/shoes.jpg",
         "price": "5000",
         "count": "100",
-        "description": "Кеды классные и прекрасные, покупай! Слякоть не почем, дождь остается в стороне!"
+        "description": "Кеды классные и прекрасные, покупай! Слякоть ни по чем, дождь остается в стороне!"
     }
 
     return render_template("product.html", **context)
