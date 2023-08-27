@@ -90,7 +90,7 @@ def product_jacket():  # put application's code here
         "img": "/static/images/jacket.webp",
         "price": "10000",
         "count": "100",
-        "description": "<p>Куртка классная и прекрасная, покупай! Слякоть ни по чем, дождь остается в стороне!</p>",
+        "description": "Куртка классная и прекрасная, покупай! Слякоть ни по чем, дождь остается в стороне!",
     }
 
     return render_template("product.html", **context)
