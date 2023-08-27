@@ -1,0 +1,60 @@
+body {
+  max-width: 100%;
+  padding: 15px;
+}
+img {
+  max-width: 100%;
+}
+header {
+  background: #011627;
+  padding: 5px 0;
+  border-radius: 5px;
+}
+header .header__menu ul {
+  margin: 0;
+  list-style: none;
+}
+header .header__menu ul li {
+  margin: 10px 45px;
+}
+header .header__menu ul li a {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+header .logo {
+  font-size: 40px;
+  color: #fff;
+}
+
+footer {
+  color: #fff;
+  font-size: 20px;
+  background: #011627;
+  padding: 5px 0;
+  border-radius: 5px;
+}
+
+main {
+  padding: 50px 0;
+}
+
+.category__block .item img {
+  width: 100%;
+  height: 200px;
+}
+.product__block .price {
+  margin: 10px 0;
+}
+.product__block .count input {
+  width: 100px;
+  margin-left: 15px;
+}
+.product__block .description {
+  margin: 10px 0;
+}
+.product__block .description .title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
