@@ -8,12 +8,14 @@
         <div class="category__block">
             <div class="row">
                 {% for category in categories %}
-                <div class="col-md-3">
-                    <div class="item">
-                        <div class="img"><a href="{{ category.slug }}"><img src="{{ category.img }}"></a></div>
-                        <div class="name">{{ category.name }}</div>
+                    <div class="col-md-3">
+                        <div class="item">
+                            <div class="img"><a href="/catalog/{{ category.slug }}/"><img src="{{ category.img_src }}"
+                                                                                          alt=""></a></div>
+                            <div class="name">{{ category.name }}</div>
+                            <div class="announce">{{ category.announce }}</div>
+                        </div>
                     </div>
-                </div>
                 {% endfor %}
             </div>
         </div>

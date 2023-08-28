@@ -4,16 +4,18 @@
 
 {% block main__content %}
     <div class="container">
-        <h1>Каталог</h1>
+        <h1>{{ category.name }}</h1>
         <div class="category__block">
             <div class="row">
                 {% for product in products %}
-                <div class="col-md-3">
-                    <div class="item">
-                        <div class="img"><a href="/product/{{ product.slug }}/"><img src="{{ product.img }}"></a></div>
-                        <div class="name">{{ product.name }}</div>
+                    <div class="col-md-3">
+                        <div class="item">
+                            <div class="img"><a href="/product/{{ product.slug }}/"><img src="{{ product.img_src }}"
+                                                                                          alt=""></a></div>
+                            <div class="name">{{ product.name }}</div>
+                            <div class="announce">{{ product.announce }}</div>
+                        </div>
                     </div>
-                </div>
                 {% endfor %}
             </div>
         </div>
