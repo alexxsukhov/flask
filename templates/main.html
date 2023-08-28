@@ -18,10 +18,10 @@
             <div class="col-md-9">
                 <div class="header__menu">
                     <ul class="d-flex align-items-center">
-                        <li><a href="/about/">О нас</a></li>
-                        <li><a href="/catalog/">Каталог</a></li>
-                        <li><a href="/contacts/">Контакты</a></li>
-                        <li><a href="/other/">Другая информация</a></li>
+                        <li><a href="{{ url_for('index') }}">Главная</a></li>
+                        <li><a href="{{ url_for('catalog') }}">Каталог</a></li>
+                        <li><a href="">Контакты</a></li>
+                        <li><a href="">Другая информация</a></li>
                     </ul>
                 </div>
             </div>
@@ -29,10 +29,7 @@
     </div>
 </header>
 <main>
-    {% block main__content %}
-
-
-    {% endblock %}
+    {% block main__content %}{% endblock %}
 </main>
 
 <footer>

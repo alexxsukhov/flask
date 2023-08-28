@@ -111,7 +111,5 @@ def product_sneakers():  # put application's code here
     return render_template("product.html", **context)
 
 
-
-
 if __name__ == '__main__':
     app.run()
