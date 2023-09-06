@@ -10,7 +10,8 @@
                 {% for product in products %}
                     <div class="col-md-3">
                         <div class="item">
-                            <div class="img"><a href="/product/{{ product.slug }}/"><img src="{{ product.img_src }}"
+
+                            <div class="img"><a href="{{ url_for("page_product", slug_product=product.slug) }}"><img src="{{ product.img_src }}"
                                                                                           alt=""></a></div>
                             <div class="name">{{ product.name }}</div>
                             <div class="announce">{{ product.announce }}</div>

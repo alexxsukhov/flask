@@ -1,0 +1,20 @@
+{% extends "main.html" %}
+
+{% block title %}Регистрация{% endblock %}
+
+{% block main__content %}
+    <div class="container">
+        <h1>Страница регистрации</h1>
+        <div class="category__block">
+            <div class="row">
+                <form method="POST" action="{{ url_for('auth') }}">
+                    {{ form.csrf_token }}
+                    {% for field in form %}
+                        <div class="group">{{ field }}</div>
+                    {% endfor %}
+                    <div class="field-group"><button class="btn btn-dark" type="submit">Зарегистрироваться</button></div>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}
